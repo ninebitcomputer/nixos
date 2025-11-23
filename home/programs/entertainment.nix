@@ -3,5 +3,6 @@
     osu-lazer
 	prismlauncher
 	everest-mons
+	icu
   ];
 }

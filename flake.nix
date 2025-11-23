@@ -5,6 +5,7 @@
   # Dotfiles is a submodule
     self.submodules = true;
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+	nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     sops-nix = {
       url = "github:Mic92/sops-nix";
@@ -18,30 +19,42 @@
     };
   };
 
-  outputs = {self, home-manager, nixpkgs, sops-nix, ... }@inputs: {
-    nixosConfigurations = {
-      IUseArchBTW = let
-          username = "daniel";
-          specialArgs = { inherit username; };
-      in nixpkgs.lib.nixosSystem {
-      inherit specialArgs;
-        system = "x86_64-linux";
-        modules = [
-          ./hosts/X1C
-          sops-nix.nixosModules.sops
-          home-manager.nixosModules.home-manager 
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
+  outputs = {self, home-manager, nixpkgs, nixpkgs-unstable, sops-nix, ... }@inputs:
+  let
+	system = "x86_64-linux";
+	unstablePkgs = import nixpkgs-unstable {
+	  inherit system;
+	};
+	unstableOverlay = final: prev: {
+	  unstable = unstablePkgs;
+	};
 
-            home-manager.extraSpecialArgs = inputs // specialArgs;
-            home-manager.users.${username} = import ./users/${username}/home.nix;
-          }
+  in {
+	nixosConfigurations = {
+	  IUseArchBTW = let
+		  username = "daniel";
+		  specialArgs = { inherit username; };
+	  in nixpkgs.lib.nixosSystem {
+		inherit system specialArgs;
+		modules = [
+		  ./hosts/X1C
+		  sops-nix.nixosModules.sops
+		  home-manager.nixosModules.home-manager 
+		  {
+			nixpkgs.overlays = [ unstableOverlay ];
+		  }
+		  {
+			home-manager.useGlobalPkgs = true;
+			home-manager.useUserPackages = true;
+
+			home-manager.extraSpecialArgs = inputs // specialArgs;
+			home-manager.users.${username} = import ./users/${username}/home.nix;
+		  }
 		  {
 			nix.settings.trusted-users = [username];
 		  }
-        ];
-      };
-    };
+		];
+	  };
+	};
   };
 }
