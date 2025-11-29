@@ -30,10 +30,7 @@
 
     nix-output-monitor
 
-    kitty
     tmux
-    obsidian
-    anki
 
     btop
     iotop
@@ -47,31 +44,6 @@
     acpi
     pciutils
     usbutils
-
-    # audio
-    pavucontrol
-    pamixer
-    bluez
-    bluez-tools
-
-    rofi-wayland-unwrapped
-    wl-clipboard
-    swayidle
-    waybar
-    swaylock
-
-    keepassxc
-    calibre
-    thunderbird
-	sioyek
-    flameshot
-
-    xclip
-    xorg.xrandr
-	arandr
-	
-	element-desktop
-	libreoffice
   ];
 
 
@@ -110,6 +82,4 @@
       line_break.disabled = true;
     };
   };
-
-  programs.firefox.enable = true;
 }
