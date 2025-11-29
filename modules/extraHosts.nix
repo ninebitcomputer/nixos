@@ -1,8 +1,7 @@
-# tries reading a file in gitignore
 { ... }: {
   networking.extraHosts = 
-	if builtins.pathExists ../extraHosts1.txt
-	then builtins.readFile ../extraHosts1.txt
+	if builtins.pathExists /etc/nixos/extraHosts.txt
+	then builtins.readFile /etc/nixos/extraHosts.txt
 	else "";
 	  
 }
