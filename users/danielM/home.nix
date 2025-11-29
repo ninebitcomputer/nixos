@@ -1,3 +1,4 @@
+#minimal config for servers
 { pkgs, username, ... }: {
 
   imports = [

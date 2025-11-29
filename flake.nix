@@ -55,6 +55,33 @@
 		  }
 		];
 	  };
+
+	  Leleif = let
+		username = "daniel";
+		specialArgs = { inherit username; };
+	  in nixpkgs.lib.nixosSystem {
+		inherit system specialArgs;
+		modules = [
+		  ./hosts/Leleif
+		  sops-nix.nixosModules.sops
+		  home-manager.nixosModules.home-manager 
+		  {
+			nixpkgs.overlays = [ unstableOverlay ];
+		  }
+		  {
+			home-manager.useGlobalPkgs = true;
+			home-manager.useUserPackages = true;
+
+			home-manager.extraSpecialArgs = inputs // specialArgs;
+			home-manager.users.${username} = import ./users/${username}/home.nix;
+		  }
+		  {
+			nix.settings.trusted-users = [username];
+		  }
+		];
+	  };
+
+
 	};
   };
 }
