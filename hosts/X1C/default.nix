@@ -9,6 +9,7 @@
       ../../modules/laptop.nix
       ../../modules/system.nix
       ../../modules/sops.nix
+      ../../modules/hosts.nix
 
 	  ../../modules/extra/podman.nix
       ../../modules/extra/mullvad.nix
