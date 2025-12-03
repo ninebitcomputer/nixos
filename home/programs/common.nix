@@ -70,6 +70,10 @@
 
   programs.bash = {
     enable = true;
+	# Distrobox emergency exit
+	bashrcExtra = ''
+	  [ -n "$DISTROBOX_ENTER_PATH" ] && . "$HOME/.bash-distrobox-rc"
+	'';
   };
 
   programs.starship = {

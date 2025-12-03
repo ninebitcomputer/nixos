@@ -16,6 +16,8 @@
     isort
     rustfmt
     prettierd
+
+	distrobox
   ];
   programs.direnv = {
     enable = true;
