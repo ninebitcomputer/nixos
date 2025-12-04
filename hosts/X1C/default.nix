@@ -9,7 +9,7 @@
       ../../modules/laptop.nix
       ../../modules/system.nix
       ../../modules/sops.nix
-      ../../modules/extraHosts.nix
+      ../../modules/extraHosts.nix	
 
 	  ../../modules/extra/podman.nix
       ../../modules/extra/mullvad.nix
@@ -18,6 +18,7 @@
       ../../modules/extra/ssh.nix
       ../../modules/extra/steam.nix
       ../../modules/extra/syncthing.nix
+	  ../../modules/extra/tailscale.nix
       ./hardware-configuration.nix
     ];
 
