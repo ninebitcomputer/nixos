@@ -8,7 +8,7 @@
       ../../modules/extraHosts.nix
 
 	  ../../modules/extra/virtualisation.nix
-	  ../../modules/extra/tailscale.nix
+	  ../../modules/extra/tailscale-server.nix
 	  ../../modules/extra/podman.nix
       ../../modules/extra/ssh.nix
       ./hardware-configuration.nix
