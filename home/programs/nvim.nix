@@ -27,7 +27,7 @@
       
       # Language specific
       nvim-jdtls
-      rust-tools-nvim
+	  # rust-tools-nvim
       
       # Treesitter
       (nvim-treesitter.withPlugins (p: [

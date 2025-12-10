@@ -1,6 +1,6 @@
 { config, pkgs, ... }: {
   home.packages = with pkgs; [
-    rofi-wayland-unwrapped
+	rofi-unwrapped
     wl-clipboard
     swayidle
     waybar
