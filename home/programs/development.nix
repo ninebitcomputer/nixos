@@ -8,7 +8,6 @@
     typescript-language-server
     jdt-language-server
     gcc
-    blender #TODO: Move this somewhere else?
 	virt-manager
 
     # Formatters

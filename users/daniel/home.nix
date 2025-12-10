@@ -8,6 +8,7 @@
     ../../home/programs/common.nix
     ../../home/programs/commonGui.nix
     ../../home/programs/development.nix
+    ../../home/programs/developmentGui.nix
     ../../home/programs/entertainment.nix
     ../../home/programs/nvim.nix
     ../../home/programs/telegram.nix
