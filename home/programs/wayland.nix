@@ -4,6 +4,7 @@
     wl-clipboard
     swayidle
     waybar
+	fuzzel
     swaylock
   ];
 }

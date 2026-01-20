@@ -7,6 +7,12 @@ in {
     source = "${dotfiles}/nvim";
     recursive = true;
   };
+
+  home.file.".config/niri" = {
+    source = "${dotfiles}/niri";
+    recursive = true;
+  };
+
   home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
 
   home.file.".config/awesome" = {
