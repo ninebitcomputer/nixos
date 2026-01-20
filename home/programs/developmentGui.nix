@@ -3,7 +3,7 @@
 	obs-studio
 	kicad
     blender
-	ltspice
+	wireshark
   ];
   programs.firefox.enable = true;
 }

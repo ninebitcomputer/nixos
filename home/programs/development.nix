@@ -18,6 +18,7 @@
     prettierd
 
 	distrobox
+	codex
   ];
   programs.direnv = {
     enable = true;
