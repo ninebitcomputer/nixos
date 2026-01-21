@@ -17,6 +17,8 @@
       nerd-fonts.fira-code
       nerd-fonts.jetbrains-mono
       nerd-fonts.iosevka
+
+	  font-awesome
     ];
 
     # use fonts specified by user rather than default ones

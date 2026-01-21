@@ -18,6 +18,9 @@
 	alacritty
     obsidian
     anki
+
+	# TODO: Some other clipboard exists in modules
+	cliphist
   ];
   programs.firefox.enable = true;
 }
