@@ -21,6 +21,7 @@
 
 	# TODO: Some other clipboard exists in modules
 	cliphist
+	remmina
   ];
   programs.firefox.enable = true;
 }
