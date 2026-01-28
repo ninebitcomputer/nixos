@@ -1,5 +1,7 @@
 { config, pkgs, ... }: {
   home.packages = with pkgs; [
+	man-pages
+
     zip
     xz
     unzip

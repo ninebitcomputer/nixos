@@ -5,6 +5,7 @@
     ../../home/dotfiles.nix
 
     ../../home/programs/ctf.nix
+    ../../home/programs/celeste.nix
     ../../home/programs/common.nix
     ../../home/programs/commonGui.nix
     ../../home/programs/development.nix
