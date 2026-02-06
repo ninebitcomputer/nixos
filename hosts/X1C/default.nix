@@ -19,6 +19,7 @@
       ../../modules/extra/steam.nix
       ../../modules/extra/syncthing.nix
 	  ../../modules/extra/tailscale.nix
+	  ../../modules/extra/flatpak.nix
       ./hardware-configuration.nix
     ];
 
