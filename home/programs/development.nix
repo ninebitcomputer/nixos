@@ -19,6 +19,8 @@
 
 	distrobox
 	codex
+
+	wireguard-tools
   ];
   programs.direnv = {
     enable = true;
