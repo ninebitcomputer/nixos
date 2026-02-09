@@ -11,6 +11,7 @@
 	  ../../modules/extra/tailscale-server.nix
 	  ../../modules/extra/podman.nix
       ../../modules/extra/ssh.nix
+	  ../../modules/extra/firewall.nix
       ./hardware-configuration.nix
     ];
 
