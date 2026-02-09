@@ -13,6 +13,7 @@
 
 	element-desktop
 	libreoffice
+	moonlight-qt
 
     kitty
 	alacritty
