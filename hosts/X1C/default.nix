@@ -3,6 +3,7 @@
 {
   imports = [
       ../../modules/audio.nix
+	  ../../modules/av_intel.nix
       ../../modules/bluetooth.nix
       ../../modules/desktop.nix
       ../../modules/fonts.nix
