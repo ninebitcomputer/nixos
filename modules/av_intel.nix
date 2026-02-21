@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   #https://wiki.nixos.org/wiki/Accelerated_Video_Playback#Intel
   hardware.graphics = {
     enable = true;
