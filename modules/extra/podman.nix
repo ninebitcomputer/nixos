@@ -10,6 +10,7 @@
 	  defaultNetwork.settings.dns_enabled = true;
 	};
   };
+  environment.systemPackages = [ pkgs.podman-compose ];
   users.users.${username} = {
 	isNormalUser = true;
 	extraGroups = [ "podman" ];
