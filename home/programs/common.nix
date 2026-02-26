@@ -74,7 +74,14 @@
     enable = true;
 	# Distrobox emergency exit
 	bashrcExtra = ''
-	  [ -n "$DISTROBOX_ENTER_PATH" ] && . "$HOME/.bash-distrobox-rc"
+
+[ -n "$DISTROBOX_ENTER_PATH" ] && . "$HOME/.bash-distrobox-rc"
+dev-init () {
+nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#$1"
+cat << EOF >> .gitignore
+.direnv/
+EOF
+	  }
 	'';
   };
 
