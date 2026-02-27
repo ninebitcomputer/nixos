@@ -24,7 +24,7 @@
   networking.interfaces.eth0.useDHCP = true;
   networking.usePredictableInterfaceNames = false;
   networking.hostName = "linode";
-  netwroking.networkmanager.enable = true;
+  networking.networkmanager.enable = true;
   time.timeZone = "America/Fort_Wayne";
 
   system.stateVersion = "25.11"; # Did you read the comment?
