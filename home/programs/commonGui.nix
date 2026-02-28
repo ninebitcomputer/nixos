@@ -20,6 +20,8 @@
     obsidian
     anki
 
+	ffmpeg
+
 	# TODO: Some other clipboard exists in modules
 	cliphist
 	remmina
