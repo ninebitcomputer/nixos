@@ -23,6 +23,10 @@
 	# TODO: Some other clipboard exists in modules
 	cliphist
 	remmina
+
+	# Notifications
+	libnotify
+	mako
   ];
   programs.firefox.enable = true;
 }
