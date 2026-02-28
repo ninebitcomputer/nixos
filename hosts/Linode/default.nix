@@ -18,7 +18,9 @@
 
   services.openssh = {
     enable = true;
+	settings.GatewayPorts = "yes";
   };
+  networking.firewall.allowedTCPPorts = [ 25565 ];
 
   networking.useDHCP = false;
   networking.interfaces.eth0.useDHCP = true;
