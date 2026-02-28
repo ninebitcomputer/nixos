@@ -10,6 +10,7 @@
 	  ../../modules/system.nix
 	  ../../modules/extra/virtualisation.nix
 	  ../../modules/extra/ssh.nix
+	  ../../modules/extra/podman.nix
       ./hardware-configuration.nix
     ];
 
