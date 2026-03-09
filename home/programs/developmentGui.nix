@@ -4,6 +4,11 @@
 	kicad
     blender
 	wireshark
+
+	(dyalog.override {
+	  acceptLicense = true;
+	})
+	ride
   ];
   programs.firefox.enable = true;
 }
