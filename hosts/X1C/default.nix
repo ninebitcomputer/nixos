@@ -21,6 +21,7 @@
       ../../modules/extra/syncthing.nix
 	  ../../modules/extra/tailscale.nix
 	  ../../modules/extra/flatpak.nix
+	  ../../modules/extra/xkb.nix
       ./hardware-configuration.nix
     ];
 
