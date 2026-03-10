@@ -12,6 +12,7 @@
 	  ../../modules/extra/podman.nix
       ../../modules/extra/ssh.nix
 	  ../../modules/extra/firewall.nix
+	  ./extra-users.nix
       ./hardware-configuration.nix
     ];
 
