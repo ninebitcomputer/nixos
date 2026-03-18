@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     lua-language-server
     rust-analyzer
+	python3
     pyright
 	emmet-ls
     ccls

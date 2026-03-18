@@ -4,6 +4,7 @@
 	kicad
     blender
 	wireshark
+	arduino-ide
 
 	(dyalog.override {
 	  acceptLicense = true;
