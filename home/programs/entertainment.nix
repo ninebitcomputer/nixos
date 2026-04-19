@@ -3,6 +3,7 @@
     osu-lazer
 	prismlauncher
 	dwarf-fortress
+	renoise
   ];
   programs.retroarch.enable = true;
 
