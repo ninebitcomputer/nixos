@@ -40,6 +40,9 @@
 
     strace
     ltrace
+	lsof
+
+	psmisc
 
     sysstat
     lm_sensors # for `sensors` command
@@ -75,6 +78,7 @@
 	# Distrobox emergency exit
 	bashrcExtra = ''
 
+alias ns="nix search nixpkgs"
 [ -n "$DISTROBOX_ENTER_PATH" ] && . "$HOME/.bash-distrobox-rc"
 dev-init () {
 nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#$1"
