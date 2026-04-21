@@ -13,6 +13,7 @@
       ../../modules/extraHosts.nix	
 
 	  ../../modules/extra/podman.nix
+	  ../../modules/extra/virtualisation.nix
       ../../modules/extra/mullvad.nix
       ../../modules/extra/nix_ld.nix
       ../../modules/extra/printing.nix

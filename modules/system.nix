@@ -7,7 +7,7 @@
 
   users.users.${username} = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "keys" "video" "dialout" ]; # sudo + sops secrets + video
+    extraGroups = [ "wheel" "keys" "video" "dialout" "libvirtd" ]; # sudo + sops secrets + video
     packages = with pkgs; [
       tree
     ];
