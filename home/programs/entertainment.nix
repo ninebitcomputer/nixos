@@ -4,6 +4,7 @@
 	prismlauncher
 	dwarf-fortress
 	renoise
+	tetrio-desktop
   ];
   programs.retroarch.enable = true;
 
