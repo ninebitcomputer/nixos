@@ -2,6 +2,7 @@
 
 {
   imports = [
+	../../modules/av_amd.nix
     ../../modules/bluetooth.nix
     ../../modules/desktop.nix
     ../../modules/fonts.nix
