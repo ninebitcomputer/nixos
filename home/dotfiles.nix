@@ -13,6 +13,11 @@ in {
     recursive = true;
   };
 
+  home.file.".config/waybar" = {
+    source = "${dotfiles}/waybar";
+    recursive = true;
+  };
+
   home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
 
   home.file.".config/awesome" = {

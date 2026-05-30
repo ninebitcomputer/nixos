@@ -1,7 +1,9 @@
 { config, pkgs, ... }: {
   home.packages = with pkgs; [
+	asm-lsp
     lua-language-server
     rust-analyzer
+	python3
     pyright
 	emmet-ls
     ccls
