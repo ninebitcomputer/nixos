@@ -12,6 +12,7 @@
 	  ../../modules/extra/ssh.nix
 	  ../../modules/extra/podman.nix
       ./hardware-configuration.nix
+	  ./caddy.nix
     ];
 
   # Use the GRUB 2 boot loader.
