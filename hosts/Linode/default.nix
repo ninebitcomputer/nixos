@@ -9,9 +9,11 @@
     [ # Include the results of the hardware scan.
 	  ../../modules/system.nix
 	  ../../modules/extra/virtualisation.nix
+	  ../../modules/extra/syncthing.nix
 	  ../../modules/extra/ssh.nix
 	  ../../modules/extra/podman.nix
       ./hardware-configuration.nix
+	  ./syncthing-backup.nix
 	  ./caddy.nix
     ];
 
