@@ -16,6 +16,7 @@
 	  ../../modules/extra/podman.nix
 	  ../../modules/extra/virtualisation.nix
       ../../modules/extra/mullvad.nix
+	  ../../modules/extra/v2raya.nix
       ../../modules/extra/nix_ld.nix
       ../../modules/extra/printing.nix
       ../../modules/extra/ssh.nix
