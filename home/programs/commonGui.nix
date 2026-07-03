@@ -27,6 +27,7 @@
 	# TODO: Some other clipboard exists in modules
 	cliphist
 	remmina
+	imhex
 
 	# Notifications
 	libnotify

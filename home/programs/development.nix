@@ -12,6 +12,8 @@
     gcc
 	virt-manager
 
+	nushell
+
     # Formatters
     stylua
     black
