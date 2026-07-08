@@ -29,6 +29,7 @@
     gawk
     zstd
     gnupg
+	gnumake
 
     nix-output-monitor
 
