@@ -3,6 +3,7 @@
     flameshot
     xclip
     xorg.xrandr
+	xorg.libX11
 	arandr
   ];
 }
