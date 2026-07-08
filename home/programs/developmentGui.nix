@@ -2,6 +2,8 @@
   home.packages = with pkgs; [
 	obs-studio
 	kicad
+	kicadAddons.kikit
+	kicadAddons.kikitLibrary
     blender
 	wireshark
 	arduino-ide
