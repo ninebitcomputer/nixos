@@ -3,7 +3,7 @@
 	obs-studio
 	kicad
 	kicadAddons.kikit
-	kicadAddons.kikitLibrary
+	kikit
     blender
 	wireshark
 	arduino-ide
