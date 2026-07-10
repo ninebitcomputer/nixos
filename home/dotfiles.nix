@@ -1,25 +1,13 @@
 { pkgs, config, username, ... }: 
 let 
-  dotfiles = config.lib.file.mkOutOfStoreSymlink /home/${username}/.config/nixos/home/dotfiles;
-  iDotfiles = ./dotfiles; # Immutable config
+  dotfiles = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/nixos/home/dotfiles";
 in {
-  home.file.".config/nvim" = {
-    source = "${dotfiles}/nvim";
-  };
-
-  home.file.".config/niri" = {
-    source = "${dotfiles}/niri";
-  };
-
-  home.file.".config/waybar" = {
-    source = "${dotfiles}/waybar";
-  };
-
-  # home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
-
-  home.file.".config/awesome" = {
-    source = "${dotfiles}/awesome";
-  };
+  home.file.".config/nvim".source = "${dotfiles}/nvim";
+  home.file.".config/niri".source = "${dotfiles}/niri";
+  home.file.".config/waybar".source = "${dotfiles}/waybar";
+  home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
+  home.file.".config/awesome".source = "${dotfiles}/awesome";
+  home.file.".config/kitty".source = "${dotfiles}/kitty";
 
   home.file.".tmux.conf".source = "${dotfiles}/tmux/tmux.conf";
   home.file.".tmux/plugins/tpm" = {
@@ -32,8 +20,5 @@ in {
 	recursive = true;
   };
 
-  home.file.".config/kitty" = {
-    source = "${dotfiles}/kitty";
-  };
 
 }
