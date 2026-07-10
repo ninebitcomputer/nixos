@@ -8,10 +8,10 @@
 	wireshark
 	arduino-ide
 
-	(dyalog.override {
+	/* (dyalog.override {
 	  acceptLicense = true;
 	})
-	ride
+	ride */
   ];
   programs.firefox.enable = true;
 }

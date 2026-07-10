@@ -5,24 +5,20 @@ let
 in {
   home.file.".config/nvim" = {
     source = "${dotfiles}/nvim";
-    recursive = true;
   };
 
   home.file.".config/niri" = {
     source = "${dotfiles}/niri";
-    recursive = true;
   };
 
   home.file.".config/waybar" = {
     source = "${dotfiles}/waybar";
-    recursive = true;
   };
 
-  home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
+  # home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
 
   home.file.".config/awesome" = {
     source = "${dotfiles}/awesome";
-    recursive = true;
   };
 
   home.file.".tmux.conf".source = "${dotfiles}/tmux/tmux.conf";
@@ -38,7 +34,6 @@ in {
 
   home.file.".config/kitty" = {
     source = "${dotfiles}/kitty";
-	recursive = true;
   };
 
 }
