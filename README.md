@@ -9,5 +9,3 @@ Dotfiles currently use `mkOutOfStoreSymlink` which recquires this repo to be pla
 - home nix imports 2 million times
 - options for home.nix to spec dotfile location https://discourse.nixos.org/t/neovim-error-installing-file-outside-home/77225
 - dyalog is broken
-- nvim is broken
-    - home manager now writes init lua, remove and manage by self
