@@ -5,7 +5,6 @@
     ../../home/core.nix
     ../../home/dotfiles.nix
     ../../home/programs/common.nix
-    ../../home/programs/nvim.nix
   ];
 
   programs.git = {

@@ -6,6 +6,5 @@
     ../../home/dotfiles.nix
     ../../home/programs/common.nix
     ../../home/programs/development.nix
-    ../../home/programs/nvim.nix
   ];
 }

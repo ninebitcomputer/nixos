@@ -12,7 +12,6 @@
     ../../home/programs/development.nix
     ../../home/programs/developmentGui.nix
     ../../home/programs/entertainment.nix
-    ../../home/programs/nvim.nix
 	../../home/programs/ocr.nix
     ../../home/programs/telegram.nix
 	../../home/programs/wayland.nix
