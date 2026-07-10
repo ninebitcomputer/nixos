@@ -1,6 +1,6 @@
 { config, pkgs, ... }: {
   programs.neovim = {
-    enable = true;
+    enable = false;				# bye bye
     defaultEditor = true;
 
     plugins = with pkgs.vimPlugins; [

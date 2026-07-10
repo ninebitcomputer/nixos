@@ -34,6 +34,7 @@
     nix-output-monitor
 
     tmux
+	neovim
 
     btop
     iotop
