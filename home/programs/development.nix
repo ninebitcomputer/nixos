@@ -2,9 +2,9 @@
   home.packages = with pkgs; [
 	asm-lsp
     lua-language-server
-    rust-analyzer
 	python3
     pyright
+	rustup
 	emmet-ls
     ccls
     typescript-language-server
@@ -18,7 +18,6 @@
     stylua
     black
     isort
-    rustfmt
     prettierd
 
 	distrobox
