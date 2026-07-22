@@ -2,7 +2,6 @@
 let 
   dotfiles = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/nixos/home/dotfiles";
 in {
-  home.file.".config/assets".source = "${dotfiles}/assets";
   home.file.".config/nvim".source = "${dotfiles}/nvim";
   home.file.".config/niri".source = "${dotfiles}/niri";
   home.file.".config/waybar".source = "${dotfiles}/waybar";

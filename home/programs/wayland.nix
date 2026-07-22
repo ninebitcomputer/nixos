@@ -6,5 +6,6 @@
     waybar
 	fuzzel
     swaylock
+	swaybg
   ];
 }
